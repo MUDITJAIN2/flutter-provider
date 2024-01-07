@@ -15,7 +15,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // consumer will call the provider here in widget and delegates its build implementation to the builder.
+    // consumer helps to build only the necessary(specific) things that need to be rebuild.
+    // consumer will call the provider here in widget and delegates its build implementation to the builder even when build is not present.
     // consumer widget only requires a builder function, which is called whenever the ChangeNotifier changes. 
     // The builder function contains three arguments, which are context, count, and child. The first argument, context, contain in every build() method. 
     // The second argument is the instance of the ChangeNotifier, and the third argument is the child that is used for optimization.
